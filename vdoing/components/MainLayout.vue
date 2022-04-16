@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wrapper">
+  <div class="main-wrapper main-gh">
     <div class="main-left">
       <slot name="mainLeft" />
     </div>
@@ -10,6 +10,8 @@
   </div>
 </template>
 <style lang="stylus">
+.main-gh
+  margin-top 0rem!important
 .main-wrapper
   margin 1.5rem auto 0 auto
   max-width $homePageWidth

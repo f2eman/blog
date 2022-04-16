@@ -108,7 +108,7 @@
       <!-- 移动端features块 e -->
     </div>
     <!-- banner块 e -->
-
+    <BannerName />
     <MainLayout>
       <template #mainLeft>
         <!-- 简约版文章列表 -->
@@ -171,7 +171,7 @@ import Pagination from '@theme/components/Pagination'
 import BloggerBar from '@theme/components/BloggerBar'
 import CategoriesBar from '@theme/components/CategoriesBar'
 import TagsBar from '@theme/components/TagsBar'
-// import BannerName from '@theme/components/BannerName'
+import BannerName from '@theme/components/BannerName'
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
 BScroll.use(Slide)
@@ -238,7 +238,7 @@ export default {
       };
     }
   },
-  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
+  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination, BannerName },
   created () {
     this.total = this.$sortPosts.length
   },
@@ -339,6 +339,7 @@ export default {
 <style lang="stylus" scoped>
 .home-wrapper
   .banner
+    display none
     width 100%
     min-height 450px
     margin-top $navbarHeight
