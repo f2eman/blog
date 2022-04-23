@@ -238,6 +238,7 @@ export default {
   },
   components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
   created () {
+    this.$router.replace('/web/')
     this.total = this.$sortPosts.length
   },
   beforeMount () {
