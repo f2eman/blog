@@ -123,6 +123,8 @@ export default {
   a
     line-height 1.4rem
     color inherit
+    font-weight bolder !important
+    font-size 16px
     &:hover, &.router-link-active
       color $accentColor
   .nav-item
@@ -150,5 +152,6 @@ export default {
   .nav-item > a:not(.external)
     &:hover, &.router-link-active
       margin-bottom -2px
+      color lighten($accentColor, 8%)
       border-bottom 2px solid lighten($accentColor, 8%)
 </style>

@@ -156,7 +156,7 @@ export default {
       opacity 0.8
     .time
       font-weight 400
-      color #aaa
+      color var(--textColor)
 @media (max-width $MQMobile)
   .page-edit
     .edit-link, .tags
