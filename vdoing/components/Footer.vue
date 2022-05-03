@@ -11,17 +11,16 @@
       ></a>
     </div>
 
-    <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    Theme by
+    <!-- Theme by
     <a
       href="https://github.com/xugaoyi/vuepress-theme-vdoing"
       target="_blank"
       title="本站主题"
       >Vdoing</a
-    >
+    > -->
     <template v-if="footer">
-      | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
-      <span v-html="footer.copyrightInfo"></span> | MIT Licensed
+      Copyright © F2EMAN丨{{ footer.createYear }}-{{ new Date().getFullYear() }}
+      <!-- <span v-html="footer.copyrightInfo"></span> -->
     </template>
   </div>
 </template>
@@ -30,19 +29,21 @@
 export default {
   computed: {
     social() {
-      return this.$themeConfig.social
+      return this.$themeConfig.social;
     },
     footer() {
-      return this.$themeConfig.footer
-    }
-  }
-}
+      return this.$themeConfig.footer;
+    },
+  },
+};
 </script>
 
-<style lang='stylus'>
+<style lang="stylus">
 // $mobileSidebarWidth = $sidebarWidth * 0.82
+.icon-gitee-fill-round
+  font-size: 17px !important
 .footer
-  padding 5rem 1.5rem 2.5rem
+  padding 5rem 1.5rem 0.5rem
   text-align center
   color #666
   box-sizing border-box
@@ -51,10 +52,10 @@ export default {
   > span
     line-height 1.5rem
   .icons
-    margin-bottom 12px
+    margin-bottom 7px
     .iconfont
-      padding 0 10px
-      font-size 1.3rem
+      padding 0 7px
+      font-size 20px
   a
     color inherit
     &:hover

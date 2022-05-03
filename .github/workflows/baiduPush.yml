@@ -20,3 +20,6 @@
 #         uses: actions/checkout@v1
 #       - name: 'Run baiduPush' # 步骤二，执行sh命令文件
 #         run: npm install && npm run baiduPush # 运行目录是仓库根目录
+
+# 配置在package.json
+#  "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
