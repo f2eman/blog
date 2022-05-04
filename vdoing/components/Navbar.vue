@@ -3,7 +3,7 @@
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
     <router-link
-      :to="$localePath"
+      to="/"
       class="home-link"
     >
       <img
