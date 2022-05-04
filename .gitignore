@@ -13,3 +13,4 @@ docs/.vuepress/dist
 
 # mac
 .DS_Store
+node_modules
