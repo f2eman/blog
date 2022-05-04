@@ -15,10 +15,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: '',
-      description: '',
+      description: 'f2eman',
     },
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  base: '/blog/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -28,7 +28,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '前端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
+        // items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           // {
           //   text: '前端文章',
@@ -60,7 +60,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           //     },
           //   ],
           // },
-        ],
+        // ],
       },
       // {
       //   text: '页面',
@@ -208,7 +208,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '',
+        content: 'f2eman',
       },
     ],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
@@ -300,16 +300,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
+
     // [
     //   'vuepress-plugin-comment', // 评论
     //   {
     //     choosen: 'gitalk',
     //     options: {
-    //       clientID: 'a6e1355287947096b88b',
-    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+    //       clientID: '',
+    //       clientSecret: '',
     //       repo: 'blog-gitalk-comment', // GitHub 仓库
-    //       owner: 'xugaoyi', // GitHub仓库所有者
-    //       admin: ['xugaoyi'], // 对仓库有写权限的人
+    //       owner: 'f2eman', // GitHub仓库所有者
+    //       admin: ['fe2man'], // 对仓库有写权限的人
     //       // distractionFreeMode: true,
     //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
     //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
